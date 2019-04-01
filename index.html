@@ -48,10 +48,10 @@
 
             <div class="col-xs-12 col-md-8 text-center">
 
-                <h2 id="startGame">Press a key to begin!</h2>
+                <h2 id="gameMsg">The game will start in 5 seconds...</h2>
                 <hr>
                 <h2>Current Question</h2>
-                <div id="current-question"></div>
+                <div id="question"></div>
                 <br>
 
             </div>
@@ -63,16 +63,34 @@
         <div class="row gameData">
 
             <div class="col"></div>
+            
+            <div class="col-xs-8 col-md-6 text-center">
 
-            <div class="col-xs-6 col-md-4 text-center">
+                <button type="button" class="btn btn-info btn-lg btn-block answerBtn" id="a">Option A</button>
+                <button type="button" class="btn btn-info btn-lg btn-block answerBtn" id="b">Option B</button>
+                <button type="button" class="btn btn-info btn-lg btn-block answerBtn" id="c">Option C</button>
+                <button type="button" class="btn btn-info btn-lg btn-block answerBtn" id="d">Option D</button>
 
-                <div class="card">
+                <br><br>
+                
+                <button type="button" class="btn btn-info" id="submit">Submit Answer</button>
+
+            </div>
+
+            <div class="col-xs-4 col-md-2 text-center">
+
+                <div class="card" id="game-stats">
 
                     <ul class="list-group list-group-flush">
 
                         <li class="list-group-item">
+                            <h3>Time Remaining:</h3>
+                            <div id="clock">25 sec.</div>
+                        </li>
+
+                        <li class="list-group-item">
                             <h3>Correct Answers:</h3>
-                            <div id="num-correct">0</div>
+                            <div id="num-right">0</div>
                         </li>
 
                         <li class="list-group-item">
@@ -91,7 +109,7 @@
 
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
 
             <div class="col"></div>
 
@@ -102,7 +120,7 @@
 
             <div class="col"></div>
 
-        </div>
+        </div> -->
 
     </div>
 
