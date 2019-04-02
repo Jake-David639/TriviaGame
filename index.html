@@ -50,8 +50,9 @@
 
                 <h2 id="gameMsg">The game will start in 5 seconds...</h2>
                 <hr>
-                <h2>Current Question</h2>
-                <div id="question"></div>
+                <h3>Current Question:</h3>
+                <br><br>
+                <h2 id="question"></h2>
                 <br>
 
             </div>
@@ -64,7 +65,7 @@
 
             <div class="col"></div>
             
-            <div class="col-xs-8 col-md-6 text-center">
+            <div class="col-xs-8 col-md-6 text-center" id="answerButtons">
 
                 <button type="button" class="btn btn-info btn-lg btn-block answerBtn" id="a">Option A</button>
                 <button type="button" class="btn btn-info btn-lg btn-block answerBtn" id="b">Option B</button>
@@ -84,17 +85,17 @@
                     <ul class="list-group list-group-flush">
 
                         <li class="list-group-item">
-                            <h3>Time Remaining:</h3>
+                            <h4>Time Remaining:</h4>
                             <div id="clock">25 sec.</div>
                         </li>
 
                         <li class="list-group-item">
-                            <h3>Correct Answers:</h3>
+                            <h4>Correct Answers:</h4>
                             <div id="num-right">0</div>
                         </li>
 
                         <li class="list-group-item">
-                            <h3>Wrong Answers:</h3>
+                            <h4>Wrong Answers:</h4>
                             <div id="num-wrong">0</div>
                         </li>
 
